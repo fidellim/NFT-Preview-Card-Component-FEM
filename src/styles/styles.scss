@@ -35,6 +35,7 @@ body {
     padding: 1.5rem;
     border-radius: 14px;
     background-color: $veryDarkBlueCardBG;
+    box-shadow: 1px 28px 15px 16px hsl(216, 53%, 9%);
 }
 
 // NFT art
@@ -133,6 +134,7 @@ body {
 .nft-owner-img {
     height: 30px;
     width: 30px;
+    border: 1px solid white;
     border-radius: 50%;
 }
 
