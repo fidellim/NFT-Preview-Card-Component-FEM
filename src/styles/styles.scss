@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// Primary
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+// Neutral
+$veryDarkBlueMainBG: hsl(217, 54%, 11%);
+$veryDarkBlueCardBG: hsl(216, 50%, 16%);
+$veryDarkBlueLine: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: $veryDarkBlueMainBG;
+    color: $softBlue;
+    font-weight: 400;
+}
+
+// NFT Card Component
+.nft-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 330px;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 14px;
+    background-color: $veryDarkBlueCardBG;
+}
+
+// NFT art
+.nft-art-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+
+    &:hover .nft-art-overlay {
+        opacity: .5;
+    }
+
+    &:hover .view-icon {
+        opacity: 1;
+    }
+}
+
+.nft-art {
+    width: 100%;
+}
+
+.nft-art-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s ease;
+    background-color: $cyan;
+}
+
+.view-icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+// NFT Info
+.nft-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.nft-title {
+    font-size: 1.15rem;
+    color: $white;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        color: $cyan;
+    }
+}
+
+.nft-desc {
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.nft-additional-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nft-countdown-container,
+.nft-price-container {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nft-price {
+    color: $cyan;
+}
+
+.nft-owner-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: .75rem 0 0 0;
+}
+
+.nft-owner-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.nft-owner-name {
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        color: $cyan;
+    }
+}
+
+hr {
+    border: 0;
+    height: .1rem;
+    background-color: $veryDarkBlueLine;
+}
+
+img {
+    display: block;
+}
