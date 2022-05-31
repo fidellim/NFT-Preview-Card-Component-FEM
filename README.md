@@ -24,22 +24,25 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Solution](./images/solution-desktop.png)
+![Mobile Solution](./images/solution-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/fidellim/NFT-Preview-Card-Component-FEM)
+- Live Site URL: [Live Site](https://nft-preview-card-component-fem-fidellim.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
+- SCSS
+- Webpack
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Image Overlay](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - Helped me create an image overlay.
 
 ## Author
 
